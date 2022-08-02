@@ -17,8 +17,8 @@ class PersonalInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        phoneLabel.text = contact.phone
-        emailLabel.text = contact.email
+        phoneLabel.text = "Phone: \(contact.phone)"
+        emailLabel.text = "Email: \(contact.email)"
         
         title = contact.fullName
     }

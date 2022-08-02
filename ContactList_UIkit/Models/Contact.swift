@@ -25,7 +25,7 @@ struct Contact {
         let mixedPhones = dataManager.telephones.shuffled()
         let mixedEmails = dataManager.emails.shuffled()
         
-        for i in 1...4 {
+        for i in 0..<4 {
             mockContacts.append(Contact(name: mixedNames[i], lastName: mixedLastNames[i], phone: mixedPhones[i], email: mixedEmails[i]))
         }
         
