@@ -16,15 +16,12 @@ class StartViewController: UITabBarController {
         
         guard let viewControllers = viewControllers else { return }
         viewControllers.forEach {
-            if let navigationVC = $0 as? UINavigationController {
-                if let destinationVC = navigationVC.topViewController as? ContactListViewController {
+                if let destinationVC = $0 as? ContactListViewController {
                     destinationVC.mockContacts = mockContacts
                 }
-                if let destinationVC = navigationVC.topViewController as? FullContactListViewController {
+                if let destinationVC = $0 as? FullContactListViewController {
                     destinationVC.mockContacts = mockContacts
                 }
-                
-            }
         }
     }
 }

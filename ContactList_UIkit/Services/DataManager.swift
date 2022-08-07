@@ -6,8 +6,13 @@
 //
 
 class DataManager {
+    
+    static let shared = DataManager()
+    
     let names = ["Alex", "Mikkey", "Franky", "Bill"]
     let lastNames = ["Branson", "Kirillov", "Milligan", "Vakovsky"]
     let telephones = ["1111", "22222", "3333", "44444"]
     let emails = ["wer@mail.ru", "rt@gmail.com", "retr@yandex.ru", "dfs@rambler.ru"]
+    
+    init() {}
 }

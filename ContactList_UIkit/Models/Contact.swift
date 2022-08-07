@@ -18,7 +18,7 @@ struct Contact {
     static func getMockContacts() -> [Contact] {
        
         var mockContacts = [Contact]()
-        let dataManager = DataManager()
+        let dataManager = DataManager.shared
         
         let mixedNames = dataManager.names.shuffled()
         let mixedLastNames = dataManager.lastNames.shuffled()
